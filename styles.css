@@ -67,6 +67,7 @@ body{
   border-radius:18px;
   padding:18px;
 }
+
 .card-header h3{margin:0 0 8px;font-size:18px}
 .meta{margin:0;color:var(--muted);line-height:1.45}
 
@@ -83,4 +84,53 @@ body{
 }
 
 .placeholder{opacity:0.75}
+
+/* Clickable card behavior */
+.card-clickable{
+  cursor: pointer;
+  transition: transform .15s ease, border-color .15s ease, background .15s ease;
+}
+.card-clickable:hover{
+  transform: translateY(-2px);
+  border-color: rgba(121,167,255,0.55);
+  background: linear-gradient(180deg, rgba(121,167,255,0.08), rgba(255,255,255,0.02));
+}
+
+/* Charts grid */
+.charts{
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 860px){
+  .charts{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.chart{
+  margin: 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.02);
+}
+
+.chart img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.chart figcaption{
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
 .footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line)}
