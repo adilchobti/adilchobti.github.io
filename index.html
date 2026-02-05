@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adil Chobti — Portfolio</title>
+  <meta name="description" content="Portfolio de projets data — Adil Chobti." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="container header">
+    <div class="hero">
+      <h1>Adil Chobti</h1>
+      <p class="subtitle">Portfolio — Projets Data / Analytics</p>
+
+      <div class="badges">
+        <span class="badge">Python</span>
+        <span class="badge">SQL</span>
+        <span class="badge">pandas</span>
+        <span class="badge">matplotlib</span>
+      </div>
+
+      <div class="actions">
+        <a class="btn primary" href="CV_ADILCHOBTI.pdf" target="_blank" rel="noopener">Télécharger mon CV (PDF)</a>
+        <a class="btn" href="https://github.com/adilchobti" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Projets</h2>
+      <p class="muted">Une sélection courte, avec des repos propres et des notebooks lisibles.</p>
+
+      <div class="grid">
+        <!-- Project card -->
+        <article class="card">
+          <div class="card-header">
+            <h3>Football Market Value Analysis</h3>
+            <p class="meta">Analyse de la valeur marchande : âge, smoothing, regroupement des postes (Défense/Milieu/Attaque), Top 10 transferts (été 2025).</p>
+          </div>
+
+          <ul class="bullets">
+            <li>Échantillon “élite” : Top 500 transferts par montant</li>
+            <li>Comparaison : courbe brute vs lissée</li>
+            <li>Boxplot par groupe tactique</li>
+          </ul>
+
+          <div class="links">
+            <a class="link" href="https://github.com/adilchobti/football-market-value-analysis" target="_blank" rel="noopener">Repo GitHub</a>
+            <a class="link" href="https://github.com/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Notebook</a>
+            <a class="link" href="https://colab.research.google.com/github/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Ouvrir dans Colab</a>
+          </div>
+        </article>
+
+        <!-- Placeholder for next projects -->
+        <article class="card placeholder">
+          <div class="card-header">
+            <h3>Prochain projet</h3>
+            <p class="meta">Ajoute ici ton prochain projet (ex: SQL analysis, dashboard, etc.).</p>
+          </div>
+          <div class="links">
+            <span class="muted">Bientôt</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>À propos</h2>
+      <p>
+        Étudiant à l’ECE Paris, orienté Data/Analytics. J’aime construire des projets clairs, reproductibles,
+        avec des visualisations lisibles et un raisonnement structuré.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p class="muted">© <span id="year"></span> Adil Chobti — Portfolio</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
