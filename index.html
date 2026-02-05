@@ -35,68 +35,65 @@
       <p class="muted">Une sélection courte, avec des repos propres et des notebooks lisibles.</p>
 
       <div class="grid">
-        <!-- FOOTBALL PROJECT (card clickable) -->
-        <article
-          class="card card-clickable"
+
+        <!-- FOOTBALL PROJECT -->
+        <article class="card card-clickable"
           data-href="https://github.com/adilchobti/football-market-value-analysis"
-          data-target="_blank"
-          aria-label="Ouvrir le projet Football Market Value Analysis"
-        >
+          data-target="_blank">
+
           <div class="card-header">
             <h3>Football Market Value Analysis</h3>
             <p class="meta">
-              Analyse de la valeur marchande des joueurs selon l’âge et le poste (Défense / Milieu / Attaque),
-              avec un focus sur les transferts les plus significatifs.
+              Analyse de la valeur marchande des joueurs selon l’âge et le poste
+              (Défense / Milieu / Attaque), avec un focus sur les transferts les plus significatifs.
             </p>
           </div>
 
           <ul class="bullets">
             <li>Échantillon : Top 500 transferts par montant</li>
             <li>Comparaison : courbe brute vs courbe lissée</li>
-            <li>Boxplot par groupe tactique (Défense / Milieu / Attaque)</li>
+            <li>Boxplot par groupe tactique</li>
           </ul>
 
-          <!-- 4 CHARTS PREVIEW -->
-          <div class="charts" aria-label="Aperçu des graphiques">
+          <!-- GRAPHS -->
+          <div class="charts">
             <figure class="chart">
-              <img src="assets/1.PNG" alt="Courbe valeur marchande moyenne vs âge (sans lissage)" loading="lazy">
-              <figcaption><strong>Âge vs valeur (brut)</strong> — tendance observée sans lissage.</figcaption>
+              <img src="assets/1.PNG" alt="Âge vs valeur marchande (brut)">
+              <figcaption><strong>Âge vs valeur (brut)</strong> — tendance sans lissage.</figcaption>
             </figure>
 
             <figure class="chart">
-              <img src="assets/2.PNG" alt="Courbe valeur marchande moyenne vs âge (avec lissage)" loading="lazy">
-              <figcaption><strong>Âge vs valeur (lissé)</strong> — meilleure lecture du pic.</figcaption>
+              <img src="assets/2.PNG" alt="Âge vs valeur marchande (lissé)">
+              <figcaption><strong>Âge vs valeur (lissé)</strong> — lecture plus claire du pic.</figcaption>
             </figure>
 
             <figure class="chart">
-              <img src="assets/3.PNG" alt="Distribution des valeurs par groupe tactique (défense, milieu, attaque)" loading="lazy">
+              <img src="assets/3.PNG" alt="Valeur par poste">
               <figcaption><strong>Postes (3 groupes)</strong> — Défense / Milieu / Attaque.</figcaption>
             </figure>
 
             <figure class="chart">
-              <img src="assets/4.PNG" alt="Top 10 des transferts" loading="lazy">
+              <img src="assets/4.PNG" alt="Top 10 transferts">
               <figcaption><strong>Top 10 transferts</strong> — classement indicatif.</figcaption>
             </figure>
           </div>
 
-          <!-- LINKS (must remain clickable, without triggering the card click) -->
           <div class="links">
-            <a class="link" href="https://github.com/adilchobti/football-market-value-analysis" target="_blank" rel="noopener">Repo GitHub</a>
-            <a class="link" href="https://github.com/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Notebook</a>
-            <a class="link" href="https://colab.research.google.com/github/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Ouvrir dans Colab</a>
+            <a class="link" href="https://github.com/adilchobti/football-market-value-analysis" target="_blank">Repo GitHub</a>
+            <a class="link" href="https://github.com/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank">Notebook</a>
+            <a class="link" href="https://colab.research.google.com/github/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank">Ouvrir dans Colab</a>
           </div>
         </article>
 
-        <!-- NEXT PROJECT PLACEHOLDER -->
+        <!-- PLACEHOLDER -->
         <article class="card placeholder">
           <div class="card-header">
             <h3>Prochain projet</h3>
-            <p class="meta">À venir : projet SQL (analyse) ou dashboard (Power BI).</p>
+            <p class="meta">À venir : projet SQL ou dashboard Power BI.</p>
           </div>
-          <div class="links">
-            <span class="muted">Bientôt</span>
-          </div>
+          <span class="muted">Bientôt</span>
         </article>
+
       </div>
     </section>
 
@@ -104,7 +101,8 @@
       <h2>À propos</h2>
       <p>
         Étudiant à l’École Centrale d’Électronique de Paris, orienté Data & Ingénierie financière.
-        J’aime construire des projets clairs, reproductibles, avec des visualisations lisibles et un raisonnement structuré.
+        J’aime construire des projets clairs, reproductibles, avec des visualisations lisibles
+        et un raisonnement structuré.
       </p>
     </section>
 
@@ -113,21 +111,49 @@
     </footer>
   </main>
 
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="">
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
   <script>
-    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Make project cards clickable without breaking internal links
-    document.querySelectorAll(".card-clickable").forEach((card) => {
-      card.addEventListener("click", (e) => {
-        // If user clicked on a link inside, do nothing (let the link work)
-        const clickedLink = e.target.closest("a");
-        if (clickedLink) return;
-
-        const href = card.getAttribute("data-href");
-        const target = card.getAttribute("data-target") || "_self";
-        if (href) window.open(href, target);
+    document.querySelectorAll(".card-clickable").forEach(card => {
+      card.addEventListener("click", e => {
+        if (e.target.closest("a") || e.target.closest("img")) return;
+        window.open(card.dataset.href, card.dataset.target || "_self");
       });
+    });
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxCaption = document.getElementById("lightbox-caption");
+
+    document.querySelectorAll(".chart img").forEach(img => {
+      img.style.cursor = "zoom-in";
+      img.addEventListener("click", e => {
+        e.stopPropagation();
+        lightboxImg.src = img.src;
+        lightboxCaption.textContent =
+          img.closest("figure").querySelector("figcaption").textContent;
+        lightbox.classList.add("active");
+      });
+    });
+
+    lightbox.addEventListener("click", () => {
+      lightbox.classList.remove("active");
+      lightboxImg.src = "";
+    });
+
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") {
+        lightbox.classList.remove("active");
+        lightboxImg.src = "";
+      }
     });
   </script>
 </body>
