@@ -1,0 +1,86 @@
+:root{
+  --bg:#0b0f14;
+  --card:#111826;
+  --text:#e8eef7;
+  --muted:#a9b4c4;
+  --line:#223049;
+  --accent:#79a7ff;
+  --btn:#182235;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: radial-gradient(1200px 600px at 10% 0%, #101a2d 0%, var(--bg) 55%);
+  color:var(--text);
+}
+
+.container{max-width:980px;margin:0 auto;padding:28px}
+.header{padding-top:56px;padding-bottom:10px}
+.hero h1{margin:0;font-size:42px;letter-spacing:-0.02em}
+.subtitle{margin:10px 0 0;color:var(--muted);font-size:16px}
+
+.badges{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.badge{
+  padding:6px 10px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,0.03);
+  border-radius:999px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.actions{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  text-decoration:none;
+  color:var(--text);
+  background:var(--btn);
+  border:1px solid var(--line);
+  padding:10px 14px;
+  border-radius:12px;
+  font-weight:600;
+  font-size:14px;
+}
+.btn.primary{
+  background: linear-gradient(180deg, rgba(121,167,255,0.22), rgba(121,167,255,0.06));
+  border-color: rgba(121,167,255,0.35);
+}
+
+.section{margin-top:34px}
+.section h2{margin:0 0 10px;font-size:22px}
+.muted{color:var(--muted)}
+
+.grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:16px;
+  margin-top:16px;
+}
+@media (min-width: 860px){
+  .grid{grid-template-columns: 1fr 1fr;}
+}
+
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px;
+}
+.card-header h3{margin:0 0 8px;font-size:18px}
+.meta{margin:0;color:var(--muted);line-height:1.45}
+
+.bullets{margin:14px 0 0;padding-left:18px;color:var(--text)}
+.bullets li{margin:6px 0;color:var(--muted)}
+
+.links{margin-top:14px;display:flex;gap:14px;flex-wrap:wrap}
+.link{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+  border-bottom:1px solid rgba(121,167,255,0.25);
+  padding-bottom:2px;
+}
+
+.placeholder{opacity:0.75}
+.footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line)}
