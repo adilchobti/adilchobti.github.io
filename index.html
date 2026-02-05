@@ -17,12 +17,12 @@
       <div class="badges">
         <span class="badge">Python</span>
         <span class="badge">SQL</span>
-        <span class="badge">C</span>
-        <span class="badge">HTML/CSS/JS</span>
+        <span class="badge">pandas</span>
+        <span class="badge">matplotlib</span>
       </div>
 
       <div class="actions">
-        <a class="btn primary" href="CV_ADILCHOBTI.pdf" target="_blank" rel="noopener"> Mon CV ! (PDF)</a>
+        <a class="btn primary" href="CV_ADILCHOBTI.pdf" target="_blank" rel="noopener">Télécharger mon CV (PDF)</a>
         <a class="btn" href="https://github.com/adilchobti" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
@@ -35,19 +35,51 @@
       <p class="muted">Une sélection courte, avec des repos propres et des notebooks lisibles.</p>
 
       <div class="grid">
-        <!-- Project card -->
-        <article class="card">
+        <!-- FOOTBALL PROJECT (card clickable) -->
+        <article
+          class="card card-clickable"
+          data-href="https://github.com/adilchobti/football-market-value-analysis"
+          data-target="_blank"
+          aria-label="Ouvrir le projet Football Market Value Analysis"
+        >
           <div class="card-header">
             <h3>Football Market Value Analysis</h3>
-            <p class="meta">Récupération d'un dataset de transferts (mercato estival). Analyse de la valeur marchande des joueurs selon leur âge, poste (Défense/Milieu/Attaque), classement du Top 10 transferts (été 2025).</p>
+            <p class="meta">
+              Analyse de la valeur marchande des joueurs selon l’âge et le poste (Défense / Milieu / Attaque),
+              avec un focus sur les transferts les plus significatifs.
+            </p>
           </div>
 
           <ul class="bullets">
             <li>Échantillon : Top 500 transferts par montant</li>
-            <li>Comparaison : courbe brute vs lissée</li>
-            <li>Boxplot par groupe selon le poste</li>
+            <li>Comparaison : courbe brute vs courbe lissée</li>
+            <li>Boxplot par groupe tactique (Défense / Milieu / Attaque)</li>
           </ul>
 
+          <!-- 4 CHARTS PREVIEW -->
+          <div class="charts" aria-label="Aperçu des graphiques">
+            <figure class="chart">
+              <img src="assets/1.PNG" alt="Courbe valeur marchande moyenne vs âge (sans lissage)" loading="lazy">
+              <figcaption><strong>Âge vs valeur (brut)</strong> — tendance observée sans lissage.</figcaption>
+            </figure>
+
+            <figure class="chart">
+              <img src="assets/2.PNG" alt="Courbe valeur marchande moyenne vs âge (avec lissage)" loading="lazy">
+              <figcaption><strong>Âge vs valeur (lissé)</strong> — meilleure lecture du pic.</figcaption>
+            </figure>
+
+            <figure class="chart">
+              <img src="assets/3.PNG" alt="Distribution des valeurs par groupe tactique (défense, milieu, attaque)" loading="lazy">
+              <figcaption><strong>Postes (3 groupes)</strong> — Défense / Milieu / Attaque.</figcaption>
+            </figure>
+
+            <figure class="chart">
+              <img src="assets/4.PNG" alt="Top 10 des transferts" loading="lazy">
+              <figcaption><strong>Top 10 transferts</strong> — classement indicatif.</figcaption>
+            </figure>
+          </div>
+
+          <!-- LINKS (must remain clickable, without triggering the card click) -->
           <div class="links">
             <a class="link" href="https://github.com/adilchobti/football-market-value-analysis" target="_blank" rel="noopener">Repo GitHub</a>
             <a class="link" href="https://github.com/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Notebook</a>
@@ -55,11 +87,11 @@
           </div>
         </article>
 
-        <!-- Placeholder for next projects -->
+        <!-- NEXT PROJECT PLACEHOLDER -->
         <article class="card placeholder">
           <div class="card-header">
             <h3>Prochain projet</h3>
-            <p class="meta">ajoute projet sql ou powerbi et changer css site   .</p>
+            <p class="meta">À venir : projet SQL (analyse) ou dashboard (Power BI).</p>
           </div>
           <div class="links">
             <span class="muted">Bientôt</span>
@@ -71,8 +103,8 @@
     <section class="section">
       <h2>À propos</h2>
       <p>
-        Étudiant à l’École Centrale d'Électronique de Paris, orienté Data & Ingénierie financière. J’aime construire des projets clairs, reproductibles,
-        avec des visualisations lisibles et un raisonnement structuré.
+        Étudiant à l’École Centrale d’Électronique de Paris, orienté Data & Ingénierie financière.
+        J’aime construire des projets clairs, reproductibles, avec des visualisations lisibles et un raisonnement structuré.
       </p>
     </section>
 
@@ -82,7 +114,21 @@
   </main>
 
   <script>
+    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Make project cards clickable without breaking internal links
+    document.querySelectorAll(".card-clickable").forEach((card) => {
+      card.addEventListener("click", (e) => {
+        // If user clicked on a link inside, do nothing (let the link work)
+        const clickedLink = e.target.closest("a");
+        if (clickedLink) return;
+
+        const href = card.getAttribute("data-href");
+        const target = card.getAttribute("data-target") || "_self";
+        if (href) window.open(href, target);
+      });
+    });
   </script>
 </body>
 </html>
