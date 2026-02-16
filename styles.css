@@ -380,3 +380,31 @@ a{color:inherit}
   color: var(--muted);
   font-size: 14px;
 }
+
+/* ===== POSITIONING BADGES (académique & objectif) ===== */
+
+.positioning-badges{
+  margin-top:16px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.position-badge{
+  padding:7px 14px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:500;
+
+  color:#cfe1ff;
+  border:1px solid rgba(121,167,255,0.35);
+
+  background:linear-gradient(
+    180deg,
+    rgba(121,167,255,0.15),
+    rgba(121,167,255,0.05)
+  );
+
+  backdrop-filter:blur(4px);
+}
+
