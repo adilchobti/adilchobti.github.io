@@ -4,144 +4,71 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Adil Chobti — Portfolio</title>
-  <meta name="description" content="Portfolio de projets data — Adil Chobti." />
+  <meta name="description" content="Portfolio Data / Analytics — Adil Chobti." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="container header">
-    <div class="hero">
-      <h1>Adil Chobti</h1>
-      <p class="subtitle">Portfolio — Projets Data / Analytics</p>
-
-      <div class="badges">
-        <span class="badge">Python</span>
-        <span class="badge">SQL</span>
-        <span class="badge">C</span>
-        <span class="badge">HTML/CSS/JS</span>
-      </div>
-
-      <div class="actions">
-        <a class="btn primary" href="CV_stage_ING3.pdf" target="_blank" rel="noopener">Voir mon CV! (PDF)</a>
-        <a class="btn" href="https://github.com/adilchobti" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">Adil Chobti</a>
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">Page d’accueil</a>
+        <a class="nav-link" href="projects.html">Mes projets</a>
+        <a class="nav-link" href="skills.html">Mes compétences</a>
+      </nav>
+      <div class="topbar-actions">
+        <a class="btn ghost" href="CV_ADILCHOBTI.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        <a class="btn ghost" href="https://github.com/adilchobti" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </header>
 
   <main class="container">
-    <section class="section">
-      <h2>Projets</h2>
-      
+    <section class="hero">
+      <div class="hero-left">
+        <p class="kicker">Data • Analytics • Finance</p>
+        <h1 class="hero-title">Adil Chobti</h1>
+        <p class="hero-subtitle">
+          Étudiant à l’ECE Paris, orienté Data & Ingénierie financière.
+          Je recherche un stage pour contribuer à des analyses data concrètes (SQL, Python) avec une restitution claire et utile.
+        </p>
 
-      <div class="grid">
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">SQL</span>
+          <span class="badge">C</span>
+          <span class="badge">HTML/CSS/JS</span>
+          <span class="badge">Excel</span>
+        </div>
 
-        <!-- FOOTBALL PROJECT -->
-        <article class="card card-clickable"
-          data-href="https://github.com/adilchobti/football-market-value-analysis"
-          data-target="_blank">
+        <div class="hero-cta">
+          <a class="btn primary" href="projects.html">Voir mes projets</a>
+          <a class="btn" href="skills.html">Voir mes compétences</a>
+        </div>
 
-          <div class="card-header">
-            <h3>Football Market Value Analysis</h3>
-            <p class="meta">
-              Récuperation d'un dataset de transferts (mercato estival). Analyse de la valeur marchande des joueurs selon l’âge et le poste
-              (Défense / Milieu / Attaque), avec un focus sur les transferts les plus significatifs.
-            </p>
+        <div class="mini">
+          <div class="mini-card">
+            <p class="mini-title">Objectif</p>
+            <p class="mini-text">Construire un profil Data solide, avec une trajectoire vers la finance de marché.</p>
           </div>
-
-          <ul class="bullets">
-            <li>Échantillon : Top 500 transferts par montant</li>
-            <li>Comparaison : courbe brute vs courbe lissée</li>
-            <li>Boxplot par groupe tactique</li>
-          </ul>
-
-          <!-- GRAPHS -->
-          <div class="charts">
-            <figure class="chart">
-              <img src="assets/1.PNG" alt="Âge vs valeur marchande (brut)">
-              <figcaption><strong>Âge vs valeur (brut)</strong> — tendance sans lissage.</figcaption>
-            </figure>
-
-            <figure class="chart">
-              <img src="assets/2.PNG" alt="Âge vs valeur marchande (lissé)">
-              <figcaption><strong>Âge vs valeur (lissé)</strong> — lecture plus claire du pic.</figcaption>
-            </figure>
-
-            <figure class="chart">
-              <img src="assets/3.PNG" alt="Valeur par poste">
-              <figcaption><strong>Postes (3 groupes)</strong> — Défense / Milieu / Attaque.</figcaption>
-            </figure>
-
-            <figure class="chart">
-              <img src="assets/4.PNG" alt="Top 10 transferts">
-              <figcaption><strong>Top 10 transferts</strong> — classement indicatif.</figcaption>
-            </figure>
+          <div class="mini-card">
+            <p class="mini-title">Ce que je fais</p>
+            <p class="mini-text">Projets d’analyse (Python/SQL), visualisations, structuration de données, restitution.</p>
           </div>
-
-          <div class="links">
-            <a class="link" href="https://github.com/adilchobti/football-market-value-analysis" target="_blank">Repo GitHub</a>
-            <a class="link" href="https://github.com/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank">Notebook</a>
-            <a class="link" href="https://colab.research.google.com/github/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank">Ouvrir dans Colab</a>
-          </div>
-        </article>
-
-        <!-- E-COMMERCE SQL PROJECT -->
-        <article class="card card-clickable"
-          data-href="https://github.com/adilchobti/ecommerce-sales-sql-analysis"
-          data-target="_blank">
-
-          <div class="card-header">
-            <h3>E-commerce Sales Analysis (SQL)</h3>
-            <p class="meta">
-              Analyse SQL des ventes e-commerce à partir d’un dataset transactionnel réel. Requêtes analytiques (chiffre d’affaires, top produits,
-              segmentation clients) et visualisations des KPI clés.
-            </p>
-          </div>
-
-          <ul class="bullets">
-            <li>SQL analytics : agrégations et segmentation client</li>
-            <li>KPI : chiffre d’affaires mensuel, top produits</li>
-            <li>Restitution visuelle : 3 graphiques business</li>
-          </ul>
-
-          <!-- GRAPHS -->
-          <div class="charts">
-            <figure class="chart">
-              <img src="assets/a.png" alt="Chiffre d’affaires mensuel">
-              <figcaption><strong>Chiffre d’affaires mensuel</strong> — évolution des ventes dans le temps.</figcaption>
-            </figure>
-
-            <figure class="chart">
-              <img src="assets/b.png" alt="Top 10 produits par chiffre d’affaires">
-              <figcaption><strong>Top 10 produits</strong> — produits les plus contributeurs au chiffre d’affaires.</figcaption>
-            </figure>
-
-            <figure class="chart">
-              <img src="assets/c.png" alt="Segmentation clients">
-              <figcaption><strong>Segmentation clients</strong> — occasionnels, réguliers, premium.</figcaption>
-            </figure>
-          </div>
-
-          <div class="links">
-            <a class="link" href="https://github.com/adilchobti/ecommerce-sales-sql-analysis" target="_blank">Repo GitHub</a>
-            <a class="link" href="https://github.com/adilchobti/ecommerce-sales-sql-analysis/blob/main/ecommerce_sales_analysis_sql.ipynb" target="_blank">Notebook</a>
-            <a class="link" href="https://colab.research.google.com/github/adilchobti/ecommerce-sales-sql-analysis/blob/main/ecommerce_sales_analysis_sql.ipynb" target="_blank">Ouvrir dans Colab</a>
-          </div>
-        </article>
-
-     
-    
-
+        </div>
       </div>
-    </section>
 
-    <section class="section">
-      <h2>À propos</h2>
-      <p>
-        Étudiant à l’École Centrale d’Électronique de Paris, orienté Data & Ingénierie financière.
-        J’aime construire des projets clairs, reproductibles, avec des visualisations lisibles
-        et un raisonnement structuré.
-      </p>
+      <div class="hero-right">
+        <div class="showcase">
+          <p class="showcase-title">Aperçu</p>
+          <p class="showcase-text">Deux projets déjà en ligne (sport analytics + e-commerce SQL), avec des visuels consultables.</p>
+          <div class="showcase-actions">
+            <a class="link" href="projects.html">Aller aux projets →</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
@@ -149,50 +76,9 @@
     </footer>
   </main>
 
-  <!-- LIGHTBOX -->
-  <div id="lightbox" class="lightbox">
-    <div class="lightbox-content">
-      <img id="lightbox-img" src="">
-      <p id="lightbox-caption"></p>
-    </div>
-  </div>
-
+  <script src="script.js"></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    document.querySelectorAll(".card-clickable").forEach(card => {
-      card.addEventListener("click", e => {
-        if (e.target.closest("a") || e.target.closest("img")) return;
-        window.open(card.dataset.href, card.dataset.target || "_self");
-      });
-    });
-
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-    const lightboxCaption = document.getElementById("lightbox-caption");
-
-    document.querySelectorAll(".chart img").forEach(img => {
-      img.style.cursor = "zoom-in";
-      img.addEventListener("click", e => {
-        e.stopPropagation();
-        lightboxImg.src = img.src;
-        lightboxCaption.textContent =
-          img.closest("figure").querySelector("figcaption").textContent;
-        lightbox.classList.add("active");
-      });
-    });
-
-    lightbox.addEventListener("click", () => {
-      lightbox.classList.remove("active");
-      lightboxImg.src = "";
-    });
-
-    document.addEventListener("keydown", e => {
-      if (e.key === "Escape") {
-        lightbox.classList.remove("active");
-        lightboxImg.src = "";
-      }
-    });
   </script>
 </body>
 </html>
