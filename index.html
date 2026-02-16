@@ -4,17 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Adil Chobti — Portfolio</title>
-  <meta name="description" content="Portfolio de projets data — Adil Chobti." />
+  <meta name="description" content="Portfolio Data / Analytics — Adil Chobti." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
-  <!-- TOPBAR -->
   <header class="topbar">
     <div class="container topbar-inner">
-
-      <a href="index.html" class="brand">Adil Chobti</a>
+      <a class="brand" href="index.html">Adil Chobti</a>
 
       <nav class="nav">
         <a class="active" href="index.html">Page d’accueil</a>
@@ -23,27 +20,21 @@
       </nav>
 
       <div class="topbar-actions">
-        <a class="btn" href="CV_stage_ING3.pdf" target="_blank">CV (PDF)</a>
-        <a class="btn" href="https://github.com/adilchobti" target="_blank">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/adil-chobti/" target="_blank">LinkedIn</a>
+        <a class="btn ghost" href="CV_stage_ING3.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        <a class="btn ghost" href="https://github.com/adilchobti" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-
     </div>
   </header>
 
-  <!-- HERO -->
   <main class="container">
-
-    <section class="hero-section">
-
+    <section class="hero">
+      <h1 class="hero-title">Adil Chobti</h1>
       <p class="hero-kicker">Data • Analytics • Finance</p>
 
-      <h1 class="hero-title">Adil Chobti</h1>
-
-      <p class="hero-description">
-        Étudiant à l’ECE Paris, spécialisé en Data & Ingénierie financière.
-        Je développe des projets analytiques concrets (Python / SQL) avec une approche rigoureuse,
-        orientée performance et prise de décision.
+      <p class="hero-subtitle">
+        Étudiant à l’ECE Paris, orienté Data & Ingénierie financière.
+        Je recherche un stage pour contribuer à des analyses data concrètes (SQL, Python) avec une restitution claire et utile.
       </p>
 
       <div class="badges">
@@ -55,23 +46,17 @@
       </div>
 
       <div class="hero-cta">
-        <a class="btn primary" href="projects.html">Voir mes projets</a>
+        <a class="btn primary-cta" href="projects.html">Voir mes projets</a>
       </div>
-
-      <div class="hero-footer">
-        <p>
-          Deux projets déjà en ligne (sport analytics & e-commerce SQL),
-          avec visualisations interactives consultables.
-        </p>
-      </div>
-
     </section>
 
     <footer class="footer">
-      <p class="muted">© 2026 Adil Chobti — Portfolio</p>
+      <p class="muted">© <span id="year"></span> Adil Chobti — Portfolio</p>
     </footer>
-
   </main>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
