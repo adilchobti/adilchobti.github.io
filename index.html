@@ -2,79 +2,78 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Adil Chobti — Portfolio</title>
-  <meta name="description" content="Portfolio Data / Analytics — Adil Chobti." />
-  <link rel="stylesheet" href="styles.css?v=2" />
-
+  <meta name="description" content="Portfolio Data / Analytics — Adil Chobti" />
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="index.html">Adil Chobti</a>
 
-      <nav class="nav">
-        <a class="active" href="index.html">Page d’accueil</a>
-        <a href="projects.html">Mes projets</a>
-        <a href="skills.html">Mes compétences</a>
-      </nav>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html">Adil Chobti</a>
 
-      <div class="topbar-actions">
-        <a class="btn ghost" href="CV_stage_ING3.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-        <a class="btn ghost" href="https://github.com/adilchobti" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+    <nav class="nav">
+      <a class="active" href="index.html">Page d’accueil</a>
+      <a href="projects.html">Mes projets</a>
+      <a href="skills.html">Mes compétences</a>
+    </nav>
+
+    <div class="topbar-actions">
+      <a class="btn ghost" href="CV_stage_ING3.pdf" target="_blank">CV (PDF)</a>
+      <a class="btn ghost" href="https://github.com/adilchobti" target="_blank">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank">LinkedIn</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main class="container">
-    <section class="hero-layout">
+<main class="container">
 
-      <!-- LEFT -->
-      <div class="hero-left">
-        <div>
-          <h1 class="hero-title">Adil Chobti</h1>
-          <p class="hero-kicker">Data • Analytics • Finance</p>
-        </div>
+  <section class="hero-layout">
 
-        <p class="hero-subtitle">
-          Étudiant à l’ECE Paris, orienté Data & Ingénierie financière.
-          Je recherche un stage pour contribuer à des analyses data concrètes (SQL, Python) avec une restitution claire et utile.
-        </p>
+    <div class="hero-left reveal">
 
-        <div class="badges">
-          <span class="badge">Python</span>
-          <span class="badge">SQL</span>
-          <span class="badge">C</span>
-          <span class="badge">HTML/CSS/JS</span>
-          <span class="badge">Excel</span>
-        </div>
+      <h1 class="hero-title">Adil Chobti</h1>
+      <p class="hero-kicker">Data • Analytics • Finance</p>
 
-        <div>
-          <a class="btn primary-cta" href="projects.html">Voir mes projets</a>
-        </div>
+      <p class="hero-subtitle">
+        Étudiant à l’ECE Paris, orienté Data & Ingénierie financière.
+        Je recherche un stage pour contribuer à des analyses data concrètes
+        (SQL, Python) avec une restitution claire et utile.
+      </p>
+
+      <div class="badges">
+        <span class="badge">Python</span>
+        <span class="badge">SQL</span>
+        <span class="badge">C</span>
+        <span class="badge">HTML/CSS/JS</span>
+        <span class="badge">Excel</span>
       </div>
 
-      <!-- RIGHT -->
-      <aside class="profile-card">
-        <h2 class="profile-title">Profil</h2>
-        <div class="profile-items">
-          <span class="profile-pill">ECE Paris</span>
-          <span class="profile-pill">Stage Data / Analytics — Été 2026</span>
-          <span class="profile-pill">Majeure : Finance & Ingénierie Quantitative</span>
-        </div>
-      </aside>
+      <a class="btn primary large" href="projects.html">
+        Voir mes projets
+      </a>
 
-    </section>
+    </div>
 
-    <footer class="footer">
-      <p class="muted">© <span id="year"></span> Adil Chobti — Portfolio</p>
-    </footer>
-  </main>
+    <aside class="profile-card reveal">
+      <h3>Profil</h3>
+      <div class="profile-items">
+        <span>ECE Paris</span>
+        <span>Stage Data / Analytics — Été 2026</span>
+        <span>Majeure : Finance & Ingénierie Quantitative</span>
+      </div>
+    </aside>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  </section>
+
+</main>
+
+<footer class="footer">
+  © <span id="year"></span> Adil Chobti — Portfolio
+</footer>
+
+<script src="script.js?v=4"></script>
 </body>
 </html>
