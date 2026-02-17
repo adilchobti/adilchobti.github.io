@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Mes compétences — Adil Chobti</title>
-<link rel="stylesheet" href="styles.css?v=4" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mes compétences — Adil Chobti</title>
+  <meta name="description" content="Compétences data et finance — Adil Chobti" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -20,38 +21,63 @@
     </nav>
 
     <div class="topbar-actions">
-      <a class="btn ghost" href="CV_stage_ING3.pdf" target="_blank">CV (PDF)</a>
-      <a class="btn ghost" href="https://github.com/adilchobti" target="_blank">GitHub</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank">LinkedIn</a>
+      <a class="btn ghost" href="CV_stage_ING3.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      <a class="btn ghost" href="https://github.com/adilchobti" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </header>
 
 <main class="container">
+  <h1 class="page-title">Mes compétences</h1>
 
-<h1 class="page-title reveal">Mes compétences</h1>
+  <div class="skills-grid">
 
-<div class="skills-grid">
+    <div class="skill-card">
+      <h2>Data & Analytics</h2>
+      <p class="muted" style="margin-top:10px;">
+        SQL (requêtes analytiques, agrégations, KPI), Python (pandas), nettoyage et structuration de données,
+        analyse exploratoire (EDA) et visualisation (matplotlib).
+      </p>
+    </div>
 
-<div class="skill-card reveal">
-<h3>Data / Analytics</h3>
-<p>SQL, Python, pandas, visualisation, structuration de données.</p>
-</div>
+    <div class="skill-card">
+      <h2>Programmation & Outils</h2>
+      <p class="muted" style="margin-top:10px;">
+        Python, SQL, C, HTML / CSS / JavaScript, Git & GitHub, Google Colab.
+        Excel pour l’analyse et la modélisation.
+      </p>
+    </div>
 
-<div class="skill-card reveal">
-<h3>Programmation</h3>
-<p>Python, SQL, C, HTML/CSS/JS.</p>
-</div>
+    <div class="skill-card">
+      <h2>Finance & Quantitatif</h2>
+      <p class="muted" style="margin-top:10px;">
+        Majeure Finance & Ingénierie Quantitative.
+        Bases de finance de marché, analyse financière, raisonnement structuré et approche quantitative.
+      </p>
+    </div>
 
-<div class="skill-card reveal">
-<h3>Finance</h3>
-<p>Analyse quantitative, Excel, bases comptables.</p>
-</div>
+  </div>
 
-</div>
+  <div class="card" style="margin-top:40px;">
+    <h2>Ce que je recherche</h2>
+    <p class="muted" style="margin-top:10px;">
+      Un stage Data / Analytics (été 2026) où je peux produire rapidement des analyses utiles :
+      extraction SQL, analyse Python, KPI, visualisation et restitution claire.
+    </p>
+
+    <div class="topbar-actions" style="margin-top:18px;">
+      <a class="btn ghost" href="projects.html">Voir mes projets</a>
+      <a class="btn ghost" href="CV_stage_ING3.pdf" target="_blank" rel="noopener">Ouvrir mon CV</a>
+    </div>
+  </div>
 
 </main>
 
-<script src="script.js?v=6"></script>
+<footer class="footer">
+  © <span id="year"></span> Adil Chobti — Portfolio
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
