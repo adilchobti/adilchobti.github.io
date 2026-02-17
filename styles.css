@@ -440,3 +440,57 @@ body{
   .hero-subtitle{font-size: 16px;}
 }
 
+/* ===== Home: full-height hero + better balance ===== */
+
+/* Le hero occupe l'écran (en enlevant l'espace topbar + footer approx) */
+.hero-layout{
+  min-height: calc(100vh - 220px); /* ajuste si besoin: 200-260px */
+  align-items: center;             /* centre verticalement gauche + carte */
+  padding-top: 56px;
+  padding-bottom: 56px;
+  gap: 44px;                       /* plus d'espace entre colonnes */
+}
+
+/* Colonne gauche un peu plus large */
+@media (min-width: 920px){
+  .hero-layout{
+    grid-template-columns: 1.5fr 0.9fr; /* + de place à gauche */
+  }
+}
+
+/* Texte un peu plus grand + plus aéré */
+.hero-subtitle{
+  font-size: 18px;
+  line-height: 1.75;
+  margin-top: 16px;
+  margin-bottom: 26px;
+}
+
+/* Badges + CTA plus bas et plus espacés */
+.badges{
+  margin-top: 18px;
+  margin-bottom: 18px;
+  gap: 12px;
+}
+
+.hero-cta{
+  margin-top: 18px;
+  gap: 14px;
+}
+
+/* Boutons un peu plus "présents" */
+.hero-cta .btn{
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-size: 15px;
+}
+
+/* Carte profil un peu plus imposante */
+.profile-card{
+  padding: 22px;
+  border-radius: 24px;
+}
+.profile-pill{
+  padding: 12px 14px;
+  border-radius: 16px;
+}
