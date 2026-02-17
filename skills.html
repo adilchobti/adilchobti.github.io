@@ -1,111 +1,57 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Adil Chobti — Mes compétences</title>
-  <meta name="description" content="Compétences Data / Finance — Adil Chobti." />
-  <link rel="stylesheet" href="styles.css?v=2" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mes compétences — Adil Chobti</title>
+<link rel="stylesheet" href="styles.css?v=4" />
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="index.html">Adil Chobti</a>
-      <nav class="nav">
-        <a class="nav-link" href="index.html">Page d’accueil</a>
-        <a class="nav-link" href="projects.html">Mes projets</a>
-        <a class="nav-link active" href="skills.html">Mes compétences</a>
-      </nav>
-      <div class="topbar-actions">
-        <a class="btn ghost" href="CV_ADILCHOBTI.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-        <a class="btn ghost" href="https://github.com/adilchobti" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html">Adil Chobti</a>
+
+    <nav class="nav">
+      <a href="index.html">Page d’accueil</a>
+      <a href="projects.html">Mes projets</a>
+      <a class="active" href="skills.html">Mes compétences</a>
+    </nav>
+
+    <div class="topbar-actions">
+      <a class="btn ghost" href="CV_stage_ING3.pdf" target="_blank">CV (PDF)</a>
+      <a class="btn ghost" href="https://github.com/adilchobti" target="_blank">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank">LinkedIn</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main class="container">
-    <section class="page-head">
-      <h1>Mes compétences</h1>
-      <p class="muted">
-        Compétences orientées stage Data/Analytics, avec une trajectoire vers la finance de marché.
-      </p>
-    </section>
+<main class="container">
 
-    <section class="skills-grid">
-      <article class="card">
-        <div class="card-header">
-          <h3>Data / Analytics</h3>
-          <p class="meta">Ce que je mobilise pour analyser, structurer et restituer des données.</p>
-        </div>
-        <ul class="bullets">
-          <li>SQL : requêtes analytiques, agrégations, segmentation</li>
-          <li>Python : pandas, manipulation de données, scripts d’analyse</li>
-          <li>Visualisation : matplotlib, restitution claire et lisible</li>
-          <li>Structuration : logique “dataset → tables → KPI → graphiques”</li>
-        </ul>
-      </article>
+<h1 class="page-title reveal">Mes compétences</h1>
 
-      <article class="card">
-        <div class="card-header">
-          <h3>Programmation</h3>
-          <p class="meta">Bases solides et capacité à apprendre vite.</p>
-        </div>
-        <ul class="bullets">
-          <li>Python, SQL, C</li>
-          <li>Web : HTML / CSS / JavaScript (site portfolio)</li>
-          <li>Notebooks : Google Colab</li>
-        </ul>
-      </article>
+<div class="skills-grid">
 
-      <article class="card">
-        <div class="card-header">
-          <h3>Finance (objectif : marchés)</h3>
-          <p class="meta">Compétences utiles pour progresser vers la finance de marché.</p>
-        </div>
-        <ul class="bullets">
-          <li>Maths : analyse & algèbre (base quantitative)</li>
-          <li>Bases comptables : comptabilité (lecture des concepts)</li>
-          <li>Outils : Excel (modélisation), PowerPoint (synthèse)</li>
-        </ul>
-      </article>
+<div class="skill-card reveal">
+<h3>Data / Analytics</h3>
+<p>SQL, Python, pandas, visualisation, structuration de données.</p>
+</div>
 
-      <article class="card">
-        <div class="card-header">
-          <h3>Langues</h3>
-          <p class="meta">Communication et collaboration.</p>
-        </div>
-        <ul class="bullets">
-          <li>Français : natif</li>
-          <li>Anglais : C1</li>
-          <li>Espagnol : B2</li>
-        </ul>
-      </article>
-    </section>
+<div class="skill-card reveal">
+<h3>Programmation</h3>
+<p>Python, SQL, C, HTML/CSS/JS.</p>
+</div>
 
-    <section class="callout">
-      <div class="callout-inner">
-        <h2>Ce que je cherche</h2>
-        <p class="muted">
-          Un stage où je peux produire de la valeur rapidement : extraction SQL, analyse Python, KPI, data visualisation,
-          et restitution claire pour aider à la décision.
-        </p>
-        <div class="callout-actions">
-          <a class="btn primary" href="projects.html">Voir mes projets</a>
-          <a class="btn" href="CV_ADILCHOBTI.pdf" target="_blank" rel="noopener">Ouvrir mon CV</a>
-        </div>
-      </div>
-    </section>
+<div class="skill-card reveal">
+<h3>Finance</h3>
+<p>Analyse quantitative, Excel, bases comptables.</p>
+</div>
 
-    <footer class="footer">
-      <p class="muted">© <span id="year"></span> Adil Chobti — Portfolio</p>
-    </footer>
-  </main>
+</div>
 
-  <script src="script.js"></script>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+</main>
+
+<script src="script.js?v=4"></script>
 </body>
 </html>
