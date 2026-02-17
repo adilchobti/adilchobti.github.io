@@ -364,3 +364,79 @@ body{
   color:var(--muted);
   font-size:14px;
 }
+
+/* ===== Home spacing boost (homepage only) ===== */
+.hero-layout{
+  gap: 34px;                 /* plus d'air entre gauche et droite */
+  padding-top: 44px;         /* descend un peu le contenu */
+  padding-bottom: 22px;
+  align-items: center;       /* équilibre vertical */
+}
+
+/* Colonne gauche plus "présente" */
+.hero-left{
+  max-width: 720px;
+}
+
+/* Typo + rythme */
+.hero-title{
+  font-size: 64px;           /* un peu plus grand */
+  margin-bottom: 10px;
+}
+
+.hero-kicker{
+  font-size: 13px;
+  letter-spacing: 0.10em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle{
+  font-size: 18px;           /* plus lisible */
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 22px;       /* espace sous le texte */
+  max-width: 62ch;
+}
+
+/* Badges : plus respirant */
+.badges{
+  margin-top: 16px;
+  gap: 12px;
+}
+
+.badge{
+  padding: 8px 12px;
+  font-size: 13.5px;
+}
+
+/* CTA : plus bas + plus gros */
+.hero-cta{
+  margin-top: 22px;
+  gap: 14px;
+}
+
+.hero-cta .btn{
+  padding: 12px 16px;
+  font-size: 15px;
+  border-radius: 14px;
+}
+
+/* Carte profil un peu plus grande */
+.profile-card{
+  padding: 22px;
+  border-radius: 24px;
+}
+
+.profile-pill{
+  padding: 12px 14px;
+  border-radius: 16px;
+  font-size: 14.5px;
+}
+
+/* Responsive : éviter que ça devienne énorme sur mobile */
+@media (max-width: 520px){
+  .hero-title{font-size: 44px;}
+  .hero-subtitle{font-size: 16px;}
+}
+
