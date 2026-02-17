@@ -1,147 +1,75 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Adil Chobti — Mes projets</title>
-  <meta name="description" content="Projets Data / Analytics — Adil Chobti." />
-  <link rel="stylesheet" href="styles.css?v=2" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mes projets — Adil Chobti</title>
+<link rel="stylesheet" href="styles.css?v=4" />
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="index.html">Adil Chobti</a>
-      <nav class="nav">
-        <a class="nav-link" href="index.html">Page d’accueil</a>
-        <a class="nav-link active" href="projects.html">Mes projets</a>
-        <a class="nav-link" href="skills.html">Mes compétences</a>
-      </nav>
-      <div class="topbar-actions">
-        <a class="btn ghost" href="CV_ADILCHOBTI.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-        <a class="btn ghost" href="https://github.com/adilchobti" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html">Adil Chobti</a>
+
+    <nav class="nav">
+      <a href="index.html">Page d’accueil</a>
+      <a class="active" href="projects.html">Mes projets</a>
+      <a href="skills.html">Mes compétences</a>
+    </nav>
+
+    <div class="topbar-actions">
+      <a class="btn ghost" href="CV_stage_ING3.pdf" target="_blank">CV (PDF)</a>
+      <a class="btn ghost" href="https://github.com/adilchobti" target="_blank">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank">LinkedIn</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main class="container">
-    <section class="page-head">
-      <h1>Mes projets</h1>
-      <p class="muted">Projets concrets avec visualisations. Clique sur un graphe pour l’ouvrir en grand.</p>
-    </section>
+<main class="container">
 
-    <section class="grid">
+<h1 class="page-title reveal">Mes projets</h1>
 
-      <!-- FOOTBALL PROJECT -->
-      <article class="card card-clickable"
-        data-href="https://github.com/adilchobti/football-market-value-analysis"
-        data-target="_blank">
+<div class="card reveal">
 
-        <div class="card-header">
-          <h3>Football Market Value Analysis</h3>
-          <p class="meta">
-            Analyse de la valeur marchande des joueurs selon l’âge et le poste (Défense / Milieu / Attaque),
-            avec un focus sur les transferts les plus significatifs.
-          </p>
-        </div>
+<h2>Football Market Value Analysis</h2>
 
-        <ul class="bullets">
-          <li>Échantillon : Top 500 transferts par montant</li>
-          <li>Courbe brute vs courbe lissée</li>
-          <li>Comparaison par groupe tactique</li>
-        </ul>
+<div class="charts">
 
-        <div class="charts">
-          <figure class="chart">
-            <img src="assets/1.PNG" alt="Âge vs valeur marchande (brut)">
-            <figcaption><strong>Âge vs valeur (brut)</strong> — tendance sans lissage.</figcaption>
-          </figure>
+  <figure class="chart">
+    <img src="assets/1.PNG">
+    <figcaption>Âge vs valeur (brut)</figcaption>
+  </figure>
 
-          <figure class="chart">
-            <img src="assets/2.PNG" alt="Âge vs valeur marchande (lissé)">
-            <figcaption><strong>Âge vs valeur (lissé)</strong> — lecture plus claire du pic.</figcaption>
-          </figure>
+  <figure class="chart">
+    <img src="assets/2.PNG">
+    <figcaption>Âge vs valeur (lissé)</figcaption>
+  </figure>
 
-          <figure class="chart">
-            <img src="assets/3.PNG" alt="Valeur par poste">
-            <figcaption><strong>Postes (3 groupes)</strong> — Défense / Milieu / Attaque.</figcaption>
-          </figure>
+  <figure class="chart">
+    <img src="assets/3.PNG">
+    <figcaption>Valeur par poste</figcaption>
+  </figure>
 
-          <figure class="chart">
-            <img src="assets/4.PNG" alt="Top 10 transferts">
-            <figcaption><strong>Top 10 transferts</strong> — classement indicatif.</figcaption>
-          </figure>
-        </div>
+  <figure class="chart">
+    <img src="assets/4.PNG">
+    <figcaption>Top 10 transferts</figcaption>
+  </figure>
 
-        <div class="links">
-          <a class="link" href="https://github.com/adilchobti/football-market-value-analysis" target="_blank" rel="noopener">Repo GitHub</a>
-          <a class="link" href="https://github.com/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Notebook</a>
-          <a class="link" href="https://colab.research.google.com/github/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Ouvrir dans Colab</a>
-        </div>
-      </article>
+</div>
 
-      <!-- E-COMMERCE SQL PROJECT -->
-      <article class="card card-clickable"
-        data-href="https://github.com/adilchobti/ecommerce-sales-sql-analysis"
-        data-target="_blank">
+</div>
 
-        <div class="card-header">
-          <h3>E-commerce Sales Analysis (SQL)</h3>
-          <p class="meta">
-            Analyse SQL des ventes e-commerce à partir d’un dataset transactionnel réel. Requêtes analytiques (CA, top produits,
-            segmentation clients) et visualisations des KPI clés.
-          </p>
-        </div>
+</main>
 
-        <ul class="bullets">
-          <li>SQL analytics : agrégations et segmentation client</li>
-          <li>KPI : chiffre d’affaires mensuel, top produits</li>
-          <li>Restitution visuelle : 3 graphiques business</li>
-        </ul>
+<div id="lightbox" class="lightbox">
+  <div class="lightbox-content">
+    <img id="lightbox-img">
+    <p id="lightbox-caption"></p>
+  </div>
+</div>
 
-        <div class="charts">
-          <figure class="chart">
-            <img src="assets/a.png" alt="Chiffre d’affaires mensuel">
-            <figcaption><strong>Chiffre d’affaires mensuel</strong> — évolution des ventes dans le temps.</figcaption>
-          </figure>
-
-          <figure class="chart">
-            <img src="assets/b.png" alt="Top 10 produits par chiffre d’affaires">
-            <figcaption><strong>Top 10 produits</strong> — produits les plus contributeurs au chiffre d’affaires.</figcaption>
-          </figure>
-
-          <figure class="chart">
-            <img src="assets/c.png" alt="Segmentation clients">
-            <figcaption><strong>Segmentation clients</strong> — occasionnels, réguliers, premium.</figcaption>
-          </figure>
-        </div>
-
-        <div class="links">
-          <a class="link" href="https://github.com/adilchobti/ecommerce-sales-sql-analysis" target="_blank" rel="noopener">Repo GitHub</a>
-          <a class="link" href="https://github.com/adilchobti/ecommerce-sales-sql-analysis/blob/main/ecommerce_sales_analysis_sql.ipynb" target="_blank" rel="noopener">Notebook</a>
-          <a class="link" href="https://colab.research.google.com/github/adilchobti/ecommerce-sales-sql-analysis/blob/main/ecommerce_sales_analysis_sql.ipynb" target="_blank" rel="noopener">Ouvrir dans Colab</a>
-        </div>
-      </article>
-
-    </section>
-
-    <!-- LIGHTBOX -->
-    <div id="lightbox" class="lightbox" aria-hidden="true">
-      <div class="lightbox-content">
-        <img id="lightbox-img" src="" alt="Graph agrandi">
-        <p id="lightbox-caption"></p>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <p class="muted">© <span id="year"></span> Adil Chobti — Portfolio</p>
-    </footer>
-  </main>
-
-  <script src="script.js"></script>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script src="script.js?v=4"></script>
 </body>
 </html>
