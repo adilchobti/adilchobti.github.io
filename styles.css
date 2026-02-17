@@ -129,16 +129,20 @@ body{
   padding: 28px 0 10px;
   align-items: start;
 }
+
+/* Responsive home layout */
 @media (max-width: 920px){
   .hero-layout{grid-template-columns:1fr}
 }
 
+/* Hero typography */
 .hero-title{
   margin:0;
   font-size:56px;
   letter-spacing:-0.03em;
   line-height:1.05;
 }
+
 @media (max-width: 520px){
   .hero-title{font-size:44px}
 }
@@ -184,7 +188,7 @@ body{
   font-weight:700;
 }
 
-/* Right card */
+/* Right card (default) */
 .profile-card{
   border:1px solid rgba(34,48,73,0.9);
   background: linear-gradient(180deg, rgba(121,167,255,0.10), rgba(255,255,255,0.02));
@@ -365,108 +369,29 @@ body{
   font-size:14px;
 }
 
-/* ===== Home spacing boost (homepage only) ===== */
-.hero-layout{
-  gap: 34px;                 /* plus d'air entre gauche et droite */
-  padding-top: 44px;         /* descend un peu le contenu */
-  padding-bottom: 22px;
-  align-items: center;       /* équilibre vertical */
-}
-
-/* Colonne gauche plus "présente" */
-.hero-left{
-  max-width: 720px;
-}
-
-/* Typo + rythme */
-.hero-title{
-  font-size: 64px;           /* un peu plus grand */
-  margin-bottom: 10px;
-}
-
-.hero-kicker{
-  font-size: 13px;
-  letter-spacing: 0.10em;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.hero-subtitle{
-  font-size: 18px;           /* plus lisible */
-  line-height: 1.7;
-  margin-top: 0;
-  margin-bottom: 22px;       /* espace sous le texte */
-  max-width: 62ch;
-}
-
-/* Badges : plus respirant */
-.badges{
-  margin-top: 16px;
-  gap: 12px;
-}
-
-.badge{
-  padding: 8px 12px;
-  font-size: 13.5px;
-}
-
-/* CTA : plus bas + plus gros */
-.hero-cta{
-  margin-top: 22px;
-  gap: 14px;
-}
-
-.hero-cta .btn{
-  padding: 12px 16px;
-  font-size: 15px;
-  border-radius: 14px;
-}
-
-/* Carte profil un peu plus grande */
-.profile-card{
-  padding: 22px;
-  border-radius: 24px;
-}
-
-.profile-pill{
-  padding: 12px 14px;
-  border-radius: 16px;
-  font-size: 14.5px;
-}
-
-/* Responsive : éviter que ça devienne énorme sur mobile */
-@media (max-width: 520px){
-  .hero-title{font-size: 44px;}
-  .hero-subtitle{font-size: 16px;}
-}
-
 /* ===== Home: full-height hero + better balance ===== */
-
-/* Le hero occupe l'écran (en enlevant l'espace topbar + footer approx) */
 .hero-layout{
-  min-height: calc(100vh - 220px); /* ajuste si besoin: 200-260px */
-  align-items: center;             /* centre verticalement gauche + carte */
+  min-height: calc(100vh - 220px);
+  align-items: center;
   padding-top: 56px;
   padding-bottom: 56px;
-  gap: 44px;                       /* plus d'espace entre colonnes */
+  gap: 44px;
 }
 
-/* Colonne gauche un peu plus large */
 @media (min-width: 920px){
   .hero-layout{
-    grid-template-columns: 1.5fr 0.9fr; /* + de place à gauche */
+    grid-template-columns: 1.5fr 0.9fr;
   }
 }
 
-/* Texte un peu plus grand + plus aéré */
 .hero-subtitle{
   font-size: 18px;
   line-height: 1.75;
   margin-top: 16px;
   margin-bottom: 26px;
+  max-width: 62ch;
 }
 
-/* Badges + CTA plus bas et plus espacés */
 .badges{
   margin-top: 18px;
   margin-bottom: 18px;
@@ -478,19 +403,64 @@ body{
   gap: 14px;
 }
 
-/* Boutons un peu plus "présents" */
 .hero-cta .btn{
   padding: 12px 18px;
   border-radius: 14px;
   font-size: 15px;
 }
 
-/* Carte profil un peu plus imposante */
 .profile-card{
   padding: 22px;
   border-radius: 24px;
 }
+
 .profile-pill{
   padding: 12px 14px;
   border-radius: 16px;
+}
+
+/* ===== Hero title & tagline bigger ===== */
+.hero-title{
+  font-size: 68px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.hero-kicker{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #8fb4ff;
+  letter-spacing: 1px;
+}
+
+/* ===== Profile card more blue ===== */
+.profile-card{
+  background: linear-gradient(
+    145deg,
+    rgba(35, 65, 120, 0.35),
+    rgba(15, 30, 60, 0.55)
+  );
+  border: 1px solid rgba(120, 160, 255, 0.35);
+  box-shadow: 0 10px 40px rgba(40, 90, 200, 0.25);
+}
+
+.profile-title{
+  color: #9ec3ff;
+  letter-spacing: 1px;
+}
+
+.profile-pill{
+  border: 1px solid rgba(120, 160, 255, 0.45);
+  background: rgba(120, 160, 255, 0.08);
+}
+
+/* ===== Project titles blue ===== */
+.project-title{
+  color: #8fb4ff;
+  font-weight: 700;
+}
+
+.project-title:hover{
+  color: #b6d0ff;
 }
