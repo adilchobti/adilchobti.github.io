@@ -6,7 +6,6 @@
   <title>Adil Chobti — Portfolio</title>
   <meta name="description" content="Portfolio Data / Analytics — Adil Chobti." />
   <link rel="stylesheet" href="styles.css?v=2" />
-
 </head>
 
 <body>
@@ -15,9 +14,9 @@
       <a class="brand" href="index.html">Adil Chobti</a>
 
       <nav class="nav">
-        <a class="active" href="index.html">Page d’accueil</a>
-        <a href="projects.html">Mes projets</a>
-        <a href="skills.html">Mes compétences</a>
+        <a class="nav-link active" href="index.html">Page d’accueil</a>
+        <a class="nav-link" href="projects.html">Mes projets</a>
+        <a class="nav-link" href="skills.html">Mes compétences</a>
       </nav>
 
       <div class="topbar-actions">
@@ -33,14 +32,13 @@
 
       <!-- LEFT -->
       <div class="hero-left">
-        <div>
-          <h1 class="hero-title">Adil Chobti</h1>
-          <p class="hero-kicker">Data • Analytics • Finance</p>
-        </div>
+        <h1 class="hero-title">Adil Chobti</h1>
+        <p class="hero-kicker">Data • Analytics • Finance</p>
 
         <p class="hero-subtitle">
           Étudiant à l’ECE Paris, orienté Data & Ingénierie financière.
-          Je recherche un stage pour contribuer à des analyses data concrètes (SQL, Python) avec une restitution claire et utile.
+          Je recherche un stage pour contribuer à des analyses data concrètes (SQL, Python)
+          avec une restitution claire et utile.
         </p>
 
         <div class="badges">
@@ -51,8 +49,9 @@
           <span class="badge">Excel</span>
         </div>
 
-        <div>
-          <a class="btn primary-cta" href="projects.html">Voir mes projets</a>
+        <div class="hero-cta">
+          <a class="btn primary" href="projects.html">Voir mes projets</a>
+          <a class="btn" href="skills.html">Voir mes compétences</a>
         </div>
       </div>
 
@@ -73,8 +72,6 @@
     </footer>
   </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
