@@ -12,13 +12,15 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <a class="brand" href="index.html">Adil Chobti</a>
+
       <nav class="nav">
         <a class="nav-link" href="index.html">Page d’accueil</a>
         <a class="nav-link active" href="projects.html">Mes projets</a>
         <a class="nav-link" href="skills.html">Mes compétences</a>
       </nav>
+
       <div class="topbar-actions">
-        <a class="btn ghost" href="CV_ADILCHOBTI.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        <a class="btn ghost" href="CV_stage_ING3.pdf" target="_blank" rel="noopener">CV (PDF)</a>
         <a class="btn ghost" href="https://github.com/adilchobti" target="_blank" rel="noopener">GitHub</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
@@ -28,20 +30,17 @@
   <main class="container">
     <section class="page-head">
       <h1>Mes projets</h1>
-      <p class="muted">Projets concrets avec visualisations. Clique sur un graphe pour l’ouvrir en grand.</p>
+      <p class="muted">Clique sur un graphe pour l’ouvrir en grand.</p>
     </section>
 
     <section class="grid">
 
-      <!-- FOOTBALL PROJECT -->
-      <article class="card card-clickable"
-        data-href="https://github.com/adilchobti/football-market-value-analysis"
-        data-target="_blank">
-
+      <!-- FOOTBALL -->
+      <article class="card">
         <div class="card-header">
           <h3>Football Market Value Analysis</h3>
           <p class="meta">
-            Analyse de la valeur marchande des joueurs selon l’âge et le poste (Défense / Milieu / Attaque),
+            Analyse de la valeur marchande selon l’âge et le poste (Défense / Milieu / Attaque),
             avec un focus sur les transferts les plus significatifs.
           </p>
         </div>
@@ -54,20 +53,17 @@
 
         <div class="charts">
           <figure class="chart">
-            <img src="assets/1.PNG" alt="Âge vs valeur marchande (brut)">
+            <img src="assets/1.PNG" alt="Âge vs valeur (brut)">
             <figcaption><strong>Âge vs valeur (brut)</strong> — tendance sans lissage.</figcaption>
           </figure>
-
           <figure class="chart">
-            <img src="assets/2.PNG" alt="Âge vs valeur marchande (lissé)">
+            <img src="assets/2.PNG" alt="Âge vs valeur (lissé)">
             <figcaption><strong>Âge vs valeur (lissé)</strong> — lecture plus claire du pic.</figcaption>
           </figure>
-
           <figure class="chart">
-            <img src="assets/3.PNG" alt="Valeur par poste">
+            <img src="assets/3.PNG" alt="Postes (3 groupes)">
             <figcaption><strong>Postes (3 groupes)</strong> — Défense / Milieu / Attaque.</figcaption>
           </figure>
-
           <figure class="chart">
             <img src="assets/4.PNG" alt="Top 10 transferts">
             <figcaption><strong>Top 10 transferts</strong> — classement indicatif.</figcaption>
@@ -81,36 +77,31 @@
         </div>
       </article>
 
-      <!-- E-COMMERCE SQL PROJECT -->
-      <article class="card card-clickable"
-        data-href="https://github.com/adilchobti/ecommerce-sales-sql-analysis"
-        data-target="_blank">
-
+      <!-- E-COMMERCE -->
+      <article class="card">
         <div class="card-header">
           <h3>E-commerce Sales Analysis (SQL)</h3>
           <p class="meta">
-            Analyse SQL des ventes e-commerce à partir d’un dataset transactionnel réel. Requêtes analytiques (CA, top produits,
-            segmentation clients) et visualisations des KPI clés.
+            Analyse SQL d’un dataset transactionnel e-commerce : KPI (CA, top produits, segmentation clients)
+            et visualisations.
           </p>
         </div>
 
         <ul class="bullets">
-          <li>SQL analytics : agrégations et segmentation client</li>
-          <li>KPI : chiffre d’affaires mensuel, top produits</li>
+          <li>SQL analytics : agrégations et segmentation</li>
+          <li>KPI : CA mensuel, top produits</li>
           <li>Restitution visuelle : 3 graphiques business</li>
         </ul>
 
         <div class="charts">
           <figure class="chart">
-            <img src="assets/a.png" alt="Chiffre d’affaires mensuel">
-            <figcaption><strong>Chiffre d’affaires mensuel</strong> — évolution des ventes dans le temps.</figcaption>
+            <img src="assets/a.png" alt="CA mensuel">
+            <figcaption><strong>Chiffre d’affaires mensuel</strong> — évolution des ventes.</figcaption>
           </figure>
-
           <figure class="chart">
-            <img src="assets/b.png" alt="Top 10 produits par chiffre d’affaires">
-            <figcaption><strong>Top 10 produits</strong> — produits les plus contributeurs au chiffre d’affaires.</figcaption>
+            <img src="assets/b.png" alt="Top produits">
+            <figcaption><strong>Top 10 produits</strong> — produits les plus contributeurs.</figcaption>
           </figure>
-
           <figure class="chart">
             <img src="assets/c.png" alt="Segmentation clients">
             <figcaption><strong>Segmentation clients</strong> — occasionnels, réguliers, premium.</figcaption>
@@ -125,23 +116,20 @@
       </article>
 
     </section>
-
-    <!-- LIGHTBOX -->
-    <div id="lightbox" class="lightbox" aria-hidden="true">
-      <div class="lightbox-content">
-        <img id="lightbox-img" src="" alt="Graph agrandi">
-        <p id="lightbox-caption"></p>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <p class="muted">© <span id="year"></span> Adil Chobti — Portfolio</p>
-    </footer>
   </main>
 
-  <script src="script.js"></script>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Graph agrandi">
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="muted">© <span id="year"></span> Adil Chobti — Portfolio</p>
+  </footer>
+
+  <script src="script.js?v=2"></script>
 </body>
 </html>
