@@ -1,8 +1,8 @@
-// Year
+// Dynamic Year
 const y = document.getElementById("year");
 if (y) y.textContent = new Date().getFullYear();
 
-// Lightbox only if present
+// Lightbox modal for charts
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const lightboxCaption = document.getElementById("lightbox-caption");
