@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Adil Chobti — Mes projets</title>
-  <meta name="description" content="Projets Data / Analytics — Adil Chobti." />
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <title>Adil Chobti — Quantitative Projects</title>
+  <meta name="description" content="Quantitative & Data Analytics Projects — Adil Chobti." />
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 
 <body>
@@ -14,13 +14,13 @@
       <a class="brand" href="index.html">Adil Chobti</a>
 
       <nav class="nav">
-        <a class="nav-link" href="index.html">Page d’accueil</a>
-        <a class="nav-link active" href="projects.html">Mes projets</a>
-        <a class="nav-link" href="skills.html">Mes compétences</a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="projects.html">Projects</a>
+        <a class="nav-link" href="skills.html">Skills & Coursework</a>
       </nav>
 
       <div class="topbar-actions">
-        <a class="btn ghost" href="CV_stage_ING3.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        <a class="btn ghost" href="CV_P1_Adil_Chobti.pdf" target="_blank" rel="noopener">CV (PDF)</a>
         <a class="btn ghost" href="https://github.com/adilchobti" target="_blank" rel="noopener">GitHub</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
@@ -29,89 +29,89 @@
 
   <main class="container">
     <section class="page-head">
-      <h1>Mes projets</h1>
-      <p class="muted"</p>
+      <h1>Quantitative & Data Projects</h1>
+      <p class="muted">Exploratory data analysis, statistical modeling, and relational database analytics.</p>
     </section>
 
     <section class="grid">
 
-      <!-- FOOTBALL -->
+      <!-- PROJECT 1: FOOTBALL MARKET VALUE -->
       <article class="card">
         <div class="card-header">
-          <h3 class="project-title">Football Market Value Analysis</h3>
+          <h3 class="project-title">Football Market Value & Valuation Modeling</h3>
           <p class="meta">
-            Analyse de la valeur marchande selon l’âge et le poste (Défense / Milieu / Attaque),
-            avec un focus sur les transferts les plus significatifs.
+            Quantitative analysis of player market valuations across ages and tactical positions (Defense / Midfield / Attack),
+            focusing on non-linear peak age decay and high-value transfer dynamics.
           </p>
         </div>
 
         <ul class="bullets">
-          <li>Échantillon : Top 500 transferts par montant</li>
-          <li>Courbe brute vs courbe lissée</li>
-          <li>Comparaison par groupe tactique</li>
+          <li>Dataset scope: Top 500 historical transfers processed using Python (Pandas, NumPy, Matplotlib)</li>
+          <li>Trend estimation: Raw scatter plot vs. smoothed polynomial curve fitting for peak valuation identification</li>
+          <li>Positional breakdown: Comparative valuation distribution across tactical role clusters</li>
         </ul>
 
         <div class="charts">
           <figure class="chart">
-            <img src="assets/1.PNG" alt="Âge vs valeur (brut)">
-            <figcaption><strong>Âge vs valeur (brut)</strong> — tendance sans lissage.</figcaption>
+            <img src="assets/1.PNG" alt="Age vs Market Value (Raw Scatter)">
+            <figcaption><strong>Age vs Market Value (Raw)</strong> — Unsmoothed transfer valuation scatter plot.</figcaption>
           </figure>
           <figure class="chart">
-            <img src="assets/2.PNG" alt="Âge vs valeur (lissé)">
-            <figcaption><strong>Âge vs valeur (lissé)</strong> — lecture plus claire du pic.</figcaption>
+            <img src="assets/2.PNG" alt="Age vs Market Value (Smoothed Trend)">
+            <figcaption><strong>Age vs Market Value (Smoothed)</strong> — Non-linear curve isolating peak valuation age.</figcaption>
           </figure>
           <figure class="chart">
-            <img src="assets/3.PNG" alt="Postes (3 groupes)">
-            <figcaption><strong>Postes (3 groupes)</strong> — Défense / Milieu / Attaque.</figcaption>
+            <img src="assets/3.PNG" alt="Valuation by Tactical Position">
+            <figcaption><strong>Tactical Group Breakdown</strong> — Comparative distributions for Defense, Midfield, and Attack.</figcaption>
           </figure>
           <figure class="chart">
-            <img src="assets/4.PNG" alt="Top 10 transferts">
-            <figcaption><strong>Top 10 transferts</strong> — classement indicatif.</figcaption>
+            <img src="assets/4.PNG" alt="Top 10 Transfers Ranking">
+            <figcaption><strong>Top 10 Transfers Ranking</strong> — High-conviction valuation benchmark.</figcaption>
           </figure>
         </div>
 
         <div class="links">
-          <a class="link" href="https://github.com/adilchobti/football-market-value-analysis" target="_blank" rel="noopener">Repo GitHub</a>
-          <a class="link" href="https://github.com/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Notebook</a>
-          <a class="link" href="https://colab.research.google.com/github/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Ouvrir dans Colab</a>
+          <a class="link" href="https://github.com/adilchobti/football-market-value-analysis" target="_blank" rel="noopener">GitHub Repo</a>
+          <a class="link" href="https://github.com/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Jupyter Notebook</a>
+          <a class="link" href="https://colab.research.google.com/github/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Open in Colab</a>
         </div>
       </article>
 
-      <!-- E-COMMERCE -->
+      <!-- PROJECT 2: E-COMMERCE SQL -->
       <article class="card">
         <div class="card-header">
-          <h3 class="project-title">E-commerce Sales Analysis (SQL)</h3>
+          <h3 class="project-title">E-commerce Sales Analytics & Data Pipeline (SQL)</h3>
           <p class="meta">
-            Analyse SQL d’un dataset transactionnel e-commerce : KPI (CA, top produits, segmentation clients)
-            et visualisations.
+            Relational SQL analytics pipeline executing transactional data aggregation, customer RFM segmentation,
+            and executive revenue KPI tracking.
           </p>
         </div>
 
         <ul class="bullets">
-          <li>SQL analytics : agrégations et segmentation</li>
-          <li>KPI : CA mensuel, top produits</li>
-          <li>Restitution visuelle : 3 graphiques business</li>
+          <li>SQL analytics: Complex query modeling, window functions, and multi-table relational aggregations</li>
+          <li>Financial KPI extraction: Monthly recurring revenue dynamics and top product revenue contribution</li>
+          <li>Data visualization: Structured chart outputs for business performance reporting</li>
         </ul>
 
         <div class="charts">
           <figure class="chart">
-            <img src="assets/a.png" alt="CA mensuel">
-            <figcaption><strong>Chiffre d’affaires mensuel</strong> — évolution des ventes.</figcaption>
+            <img src="assets/a.png" alt="Monthly Revenue Trend">
+            <figcaption><strong>Monthly Revenue Growth</strong> — Historical revenue trajectory and sales volume.</figcaption>
           </figure>
           <figure class="chart">
-            <img src="assets/b.png" alt="Top produits">
-            <figcaption><strong>Top 10 produits</strong> — produits les plus contributeurs.</figcaption>
+            <img src="assets/b.png" alt="Top 10 Products by Revenue">
+            <figcaption><strong>Top 10 Product Contribution</strong> — Core revenue-generating product items.</figcaption>
           </figure>
           <figure class="chart">
-            <img src="assets/c.png" alt="Segmentation clients">
-            <figcaption><strong>Segmentation clients</strong> — occasionnels, réguliers, premium.</figcaption>
+            <img src="assets/c.png" alt="Customer Segmentation Cohorts">
+            <figcaption><strong>Customer Segmentation</strong> — Occasional, regular, and high-value customer cohorts.</figcaption>
           </figure>
         </div>
 
         <div class="links">
-          <a class="link" href="https://github.com/adilchobti/ecommerce-sales-sql-analysis" target="_blank" rel="noopener">Repo GitHub</a>
-          <a class="link" href="https://github.com/adilchobti/ecommerce-sales-sql-analysis/blob/main/ecommerce_sales_analysis_sql.ipynb" target="_blank" rel="noopener">Notebook</a>
-          <a class="link" href="https://colab.research.google.com/github/adilchobti/ecommerce-sales-sql-analysis/blob/main/ecommerce_sales_analysis_sql.ipynb" target="_blank" rel="noopener">Ouvrir dans Colab</a>
+          <a class="link" href="https://github.com/adilchobti/ecommerce-sales-sql-analysis" target="_blank" rel="noopener">GitHub Repo</a>
+          <a class="link" href="https://github.com/adilchobti/ecommerce-sales-sql-analysis/blob/main/ecommerce_sales_analysis_sql.ipynb" target="_blank" rel="noopener">Jupyter Notebook</a>
+          <a class="link" href="https://colab.research.google.com/github/adilchobti/ecommerce-sales-sql-analysis/blob/main/ecommerce_sales_analysis_sql.ipynb" target="_blank" rel="noopener">Open in Colab</a>
         </div>
       </article>
 
@@ -121,7 +121,7 @@
   <!-- LIGHTBOX -->
   <div id="lightbox" class="lightbox">
     <div class="lightbox-content">
-      <img id="lightbox-img" src="" alt="Graph agrandi">
+      <img id="lightbox-img" src="" alt="Enlarged chart view">
       <p id="lightbox-caption"></p>
     </div>
   </div>
