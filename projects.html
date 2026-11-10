@@ -1,135 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Adil Chobti — Quantitative Projects</title>
-  <meta name="description" content="Quantitative & Data Analytics Projects — Adil Chobti." />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101815">
+  <meta name="description" content="Selected quantitative finance, portfolio analytics and data projects by Adil Chobti.">
+  <title>Selected Work — Adil Chobti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
-
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="index.html">Adil Chobti</a>
+  <div class="site-shell">
+    <header class="topbar"><div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">AC</span><span>ADIL CHOBTI<span class="brand-sub">FINANCIAL ENGINEERING</span></span></a>
+      <nav class="nav" aria-label="Main navigation"><a class="nav-link" href="index.html">Overview</a><a class="nav-link active" href="projects.html">Selected work</a><a class="nav-link" href="skills.html">Expertise</a></nav>
+      <div class="nav-actions"><a class="text-link" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="button button-light" href="CV_P1_Adil_Chobti.pdf" target="_blank" rel="noopener">Download CV <span>↗</span></a></div>
+    </div></header>
+    <main class="container page-main">
+      <section class="page-hero reveal"><p class="eyebrow">PORTFOLIO / 02</p><h1>Selected<br><em>work.</em></h1><p>A selection of projects exploring quantitative methods, financial data and analytical problem-solving.</p></section>
+      <div class="section-heading project-count"><p class="eyebrow">RESEARCH & ENGINEERING</p><span class="section-rule"></span><span class="eyebrow">03 PROJECTS</span></div>
 
-      <nav class="nav">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link active" href="projects.html">Projects</a>
-        <a class="nav-link" href="skills.html">Skills & Coursework</a>
-      </nav>
-
-      <div class="topbar-actions">
-        <a class="btn ghost" href="CV_P1_Adil_Chobti.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-        <a class="btn ghost" href="https://github.com/adilchobti" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="page-head">
-      <h1>Quantitative & Data Projects</h1>
-      <p class="muted">Exploratory data analysis, statistical modeling, and relational database analytics.</p>
-    </section>
-
-    <section class="grid">
-
-      <!-- PROJECT 1: FOOTBALL MARKET VALUE -->
-      <article class="card">
-        <div class="card-header">
-          <h3 class="project-title">Football Market Value & Valuation Modeling</h3>
-          <p class="meta">
-            Quantitative analysis of player market valuations across ages and tactical positions (Defense / Midfield / Attack),
-            focusing on non-linear peak age decay and high-value transfer dynamics.
-          </p>
-        </div>
-
-        <ul class="bullets">
-          <li>Dataset scope: Top 500 historical transfers processed using Python (Pandas, NumPy, Matplotlib)</li>
-          <li>Trend estimation: Raw scatter plot vs. smoothed polynomial curve fitting for peak valuation identification</li>
-          <li>Positional breakdown: Comparative valuation distribution across tactical role clusters</li>
-        </ul>
-
-        <div class="charts">
-          <figure class="chart">
-            <img src="assets/1.PNG" alt="Age vs Market Value (Raw Scatter)">
-            <figcaption><strong>Age vs Market Value (Raw)</strong> — Unsmoothed transfer valuation scatter plot.</figcaption>
-          </figure>
-          <figure class="chart">
-            <img src="assets/2.PNG" alt="Age vs Market Value (Smoothed Trend)">
-            <figcaption><strong>Age vs Market Value (Smoothed)</strong> — Non-linear curve isolating peak valuation age.</figcaption>
-          </figure>
-          <figure class="chart">
-            <img src="assets/3.PNG" alt="Valuation by Tactical Position">
-            <figcaption><strong>Tactical Group Breakdown</strong> — Comparative distributions for Defense, Midfield, and Attack.</figcaption>
-          </figure>
-          <figure class="chart">
-            <img src="assets/4.PNG" alt="Top 10 Transfers Ranking">
-            <figcaption><strong>Top 10 Transfers Ranking</strong> — High-conviction valuation benchmark.</figcaption>
-          </figure>
-        </div>
-
-        <div class="links">
-          <a class="link" href="https://github.com/adilchobti/football-market-value-analysis" target="_blank" rel="noopener">GitHub Repo</a>
-          <a class="link" href="https://github.com/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Jupyter Notebook</a>
-          <a class="link" href="https://colab.research.google.com/github/adilchobti/football-market-value-analysis/blob/main/notebooks/01_market_value_vs_age.ipynb" target="_blank" rel="noopener">Open in Colab</a>
+      <article class="project-feature reveal" id="monte-carlo">
+        <div class="project-visual simulation-visual"><div class="visual-top"><span>01 / QUANTITATIVE FINANCE</span><span>PYTHON · 2026</span></div><svg viewBox="0 0 700 300" role="img" aria-label="Illustrative Monte Carlo portfolio paths"><g class="chart-grid"><path d="M0 55H700M0 115H700M0 175H700M0 235H700"/></g><g class="chart-lines"><path d="M0 220 C80 200 100 240 170 175 S260 180 330 120 S430 145 500 82 S620 92 700 25"/><path d="M0 220 C70 225 100 190 170 205 S260 155 330 170 S430 105 500 130 S620 80 700 95"/><path d="M0 220 C70 235 110 215 170 220 S260 205 330 220 S430 180 500 190 S620 155 700 175"/><path d="M0 220 C75 180 115 215 170 150 S260 205 330 135 S430 170 500 105 S620 130 700 70"/></g></svg><div class="visual-bottom"><span>10,000 SIMULATED SCENARIOS</span><span>252 TRADING DAYS</span></div></div>
+        <div class="project-content"><div class="project-meta"><span>01 — FEATURED</span><span>RISK / OPTIMIZATION / BACKTESTING</span></div><h2>Monte Carlo Portfolio Simulation & Risk Analysis</h2><p class="project-description">Development of a quantitative portfolio analytics framework combining Monte Carlo simulation, Markowitz optimization, risk measurement and historical walk-forward backtesting.</p>
+          <div class="project-points"><div><b>01</b><span><strong>Monte Carlo simulation</strong> — 10,000 correlated portfolio scenarios using Geometric Brownian Motion and Cholesky decomposition.</span></div><div><b>02</b><span><strong>Portfolio optimization</strong> — Equal-weight, minimum-variance and maximum-Sharpe allocations, including a 30% weight cap.</span></div><div><b>03</b><span><strong>Risk analytics</strong> — Value at Risk, Conditional Value at Risk and maximum drawdown.</span></div><div><b>04</b><span><strong>Walk-forward backtesting</strong> — 252-day rolling estimation, monthly rebalancing, transaction-cost assumptions and SPY benchmark comparison.</span></div></div>
+          <div class="result-strip"><div><strong>27.32%</strong><span>MAX SHARPE CAGR*</span></div><div><strong>0.99</strong><span>SHARPE RATIO*</span></div><div><strong>−31.04%</strong><span>MAX DRAWDOWN*</span></div></div>
+          <p class="footnote">*Historical out-of-sample backtest results for the tested period and selected asset universe; not indicative of future performance.</p>
+          <div class="tag-list"><span>Python</span><span>NumPy</span><span>Pandas</span><span>SciPy</span><span>Matplotlib</span><span>Portfolio Theory</span></div>
+          <div class="project-links"><a class="button button-accent" href="https://github.com/adilchobti/monte-carlo-portfolio-risk" target="_blank" rel="noopener">Explore repository ↗</a></div>
         </div>
       </article>
 
-      <!-- PROJECT 2: E-COMMERCE SQL -->
-      <article class="card">
-        <div class="card-header">
-          <h3 class="project-title">E-commerce Sales Analytics & Data Pipeline (SQL)</h3>
-          <p class="meta">
-            Relational SQL analytics pipeline executing transactional data aggregation, customer RFM segmentation,
-            and executive revenue KPI tracking.
-          </p>
-        </div>
-
-        <ul class="bullets">
-          <li>SQL analytics: Complex query modeling, window functions, and multi-table relational aggregations</li>
-          <li>Financial KPI extraction: Monthly recurring revenue dynamics and top product revenue contribution</li>
-          <li>Data visualization: Structured chart outputs for business performance reporting</li>
-        </ul>
-
-        <div class="charts">
-          <figure class="chart">
-            <img src="assets/a.png" alt="Monthly Revenue Trend">
-            <figcaption><strong>Monthly Revenue Growth</strong> — Historical revenue trajectory and sales volume.</figcaption>
-          </figure>
-          <figure class="chart">
-            <img src="assets/b.png" alt="Top 10 Products by Revenue">
-            <figcaption><strong>Top 10 Product Contribution</strong> — Core revenue-generating product items.</figcaption>
-          </figure>
-          <figure class="chart">
-            <img src="assets/c.png" alt="Customer Segmentation Cohorts">
-            <figcaption><strong>Customer Segmentation</strong> — Occasional, regular, and high-value customer cohorts.</figcaption>
-          </figure>
-        </div>
-
-        <div class="links">
-          <a class="link" href="https://github.com/adilchobti/ecommerce-sales-sql-analysis" target="_blank" rel="noopener">GitHub Repo</a>
-          <a class="link" href="https://github.com/adilchobti/ecommerce-sales-sql-analysis/blob/main/ecommerce_sales_analysis_sql.ipynb" target="_blank" rel="noopener">Jupyter Notebook</a>
-          <a class="link" href="https://colab.research.google.com/github/adilchobti/ecommerce-sales-sql-analysis/blob/main/ecommerce_sales_analysis_sql.ipynb" target="_blank" rel="noopener">Open in Colab</a>
-        </div>
+      <article class="project-row reveal">
+        <div class="project-number">02</div><div class="project-row-main"><p class="eyebrow">DATA ANALYSIS · PYTHON</p><h2>Football Market Value & Valuation Modeling</h2><p>Quantitative analysis of player market valuations across ages and tactical positions, exploring non-linear valuation patterns and transfer dynamics.</p><ul class="compact-list"><li>Top 500 historical transfers processed with Pandas and NumPy.</li><li>Scatter analysis and polynomial curve fitting to explore peak valuation age.</li><li>Comparative valuation distributions across defensive, midfield and attacking roles.</li></ul><div class="tag-list"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></div><a class="arrow-link" href="https://github.com/adilchobti/football-market-value-analysis" target="_blank" rel="noopener">View repository <span>↗</span></a></div>
+        <div class="project-row-art football-art"><span>MARKET VALUE</span><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>AGE × VALUATION</small></div>
       </article>
 
-    </section>
-  </main>
-
-  <!-- LIGHTBOX -->
-  <div id="lightbox" class="lightbox">
-    <div class="lightbox-content">
-      <img id="lightbox-img" src="" alt="Enlarged chart view">
-      <p id="lightbox-caption"></p>
-    </div>
+      <article class="project-row reveal">
+        <div class="project-number">03</div><div class="project-row-main"><p class="eyebrow">DATA ENGINEERING · SQL</p><h2>E-commerce Sales Analytics & Data Pipeline</h2><p>Relational SQL analytics covering transactional aggregation, customer RFM segmentation and executive revenue KPI tracking.</p><ul class="compact-list"><li>Complex queries, window functions and multi-table aggregations.</li><li>Monthly revenue trends and top-product contribution analysis.</li><li>Customer segmentation into behavioral cohorts.</li></ul><div class="tag-list"><span>SQL</span><span>Analytics</span><span>Data Visualization</span></div><a class="arrow-link" href="https://github.com/adilchobti/ecommerce-sales-sql-analysis" target="_blank" rel="noopener">View repository <span>↗</span></a></div>
+        <div class="project-row-art data-art"><span>REVENUE ANALYTICS</span><svg viewBox="0 0 360 180" aria-hidden="true"><path d="M5 145 C50 130 60 145 95 105 S145 120 175 78 S230 100 260 48 S315 58 355 15"/></svg><small>DATA → INSIGHT</small></div>
+      </article>
+    </main>
+    <footer class="footer container"><a class="brand footer-brand" href="index.html"><span class="brand-mark">AC</span><span>ADIL CHOBTI<span class="brand-sub">FINANCIAL ENGINEERING</span></span></a><p>© <span id="year"></span> ADIL CHOBTI. BUILT WITH CURIOSITY.</p><a href="#" class="back-top">BACK TO TOP ↑</a></footer>
   </div>
-
-  <footer class="footer">
-    <p class="muted">© <span id="year"></span> Adil Chobti — Portfolio</p>
-  </footer>
-
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
