@@ -1,34 +1,25 @@
-// Dynamic Year
-const y = document.getElementById("year");
-if (y) y.textContent = new Date().getFullYear();
+// Dynamic footer year
+const yearNode = document.getElementById("year");
+if (yearNode) yearNode.textContent = new Date().getFullYear();
 
-// Lightbox modal for charts
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const lightboxCaption = document.getElementById("lightbox-caption");
-
-if (lightbox && lightboxImg && lightboxCaption) {
-  document.querySelectorAll(".chart img").forEach(img => {
-    img.addEventListener("click", (e) => {
-      e.stopPropagation();
-      lightboxImg.src = img.src;
-      const cap = img.closest("figure")?.querySelector("figcaption")?.textContent || "";
-      lightboxCaption.textContent = cap;
-      lightbox.classList.add("active");
+// Progressive reveal, with a no-JS-friendly fallback.
+const revealItems = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
     });
-  });
-
-  lightbox.addEventListener("click", () => {
-    lightbox.classList.remove("active");
-    lightboxImg.src = "";
-    lightboxCaption.textContent = "";
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      lightbox.classList.remove("active");
-      lightboxImg.src = "";
-      lightboxCaption.textContent = "";
-    }
-  });
+  }, { threshold: 0.12 });
+  revealItems.forEach(item => revealObserver.observe(item));
+} else {
+  revealItems.forEach(item => item.classList.add("is-visible"));
 }
+
+// Pause the moving focus ticker when the page is not visible.
+document.addEventListener("visibilitychange", () => {
+  const ticker = document.querySelector(".ticker-track");
+  if (ticker) ticker.style.animationPlayState = document.hidden ? "paused" : "running";
+});
