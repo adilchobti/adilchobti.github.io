@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101815">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body><div class="site-shell">
+<header class="topbar"><div class="container nav-wrap">
+<a class="brand" href="index.html"><span class="brand-mark">AC</span><span>ADIL CHOBTI<span class="brand-sub">FINANCIAL ENGINEERING</span></span></a>
+<nav class="nav" aria-label="Main navigation"><a class="nav-link" href="index.html">Overview</a><a class="nav-link active" href="projects.html">Selected work</a><a class="nav-link" href="skills.html">Expertise</a></nav>
+<div class="nav-actions"><a class="text-link" href="https://www.linkedin.com/in/adil-chobti/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="button button-light" href="CV_P1_Adil_Chobti.pdf" target="_blank" rel="noopener">Download CV <span>↗</span></a></div>
+</div></header>
+<main class="container page-main">
+<a class="back-projects" href="projects.html">← ALL PROJECTS</a>
+<title>Monte Carlo Portfolio Simulation | Adil Chobti</title>
+<section class="case-hero reveal"><p class="eyebrow">01 / QUANTITATIVE FINANCE · PYTHON</p><h1>Monte Carlo Portfolio<br><em>Simulation & Risk Analysis</em></h1><p>A quantitative framework for exploring portfolio outcomes, measuring downside risk and comparing allocation strategies through simulation and historical backtesting.</p><div class="tag-list"><span>Python</span><span>NumPy</span><span>Pandas</span><span>SciPy</span><span>Matplotlib</span></div></section>
+<section class="case-metrics reveal"><div><strong>10,000</strong><span>SIMULATED SCENARIOS</span></div><div><strong>252</strong><span>TRADING DAYS</span></div><div><strong>30%</strong><span>MAX WEIGHT CAP</span></div></section>
+<section class="case-section reveal"><div class="case-heading"><p class="eyebrow">01 / SIMULATION</p><h2>Explore the range<br><em>of possible outcomes.</em></h2></div><div class="chart-gallery">
+<figure class="chart-panel chart-wide"><img src="https://raw.githubusercontent.com/adilchobti/monte-carlo-portfolio-risk/main/results/monte_carlo_paths.png" alt="Monte Carlo simulated portfolio paths"><figcaption><strong>Monte Carlo paths</strong><span>Simulated portfolio trajectories across the investment horizon.</span></figcaption></figure>
+<figure class="chart-panel"><img src="https://raw.githubusercontent.com/adilchobti/monte-carlo-portfolio-risk/main/results/monte_carlo_distribution.png" alt="Distribution of Monte Carlo portfolio outcomes"><figcaption><strong>Outcome distribution</strong><span>Distribution of simulated terminal portfolio values.</span></figcaption></figure>
+<figure class="chart-panel"><img src="https://raw.githubusercontent.com/adilchobti/monte-carlo-portfolio-risk/main/results/correlation_heatmap.png" alt="Asset correlation heatmap"><figcaption><strong>Correlation structure</strong><span>Historical asset correlations used to model joint movements.</span></figcaption></figure>
+</div></section>
+<section class="case-section reveal"><div class="case-heading"><p class="eyebrow">02 / METHODOLOGY</p><h2>From assumptions<br><em>to risk measures.</em></h2></div><div class="case-steps"><div><b>01</b><strong>Data & dependencies</strong><p>Historical returns are used to estimate expected returns, volatility and the correlation structure between assets.</p></div><div><b>02</b><strong>Scenario generation</strong><p>Correlated random shocks are generated using Cholesky decomposition and Geometric Brownian Motion.</p></div><div><b>03</b><strong>Portfolio construction</strong><p>Equal-weight, minimum-variance and maximum-Sharpe allocations are compared under a 30% weight constraint.</p></div><div><b>04</b><strong>Evaluation</strong><p>VaR, CVaR, Sharpe ratio and maximum drawdown complement a walk-forward backtest with monthly rebalancing.</p></div></div><p class="footnote">Backtest statistics are historical results for the selected period and asset universe; they are not indicative of future performance.</p><a class="button button-accent" href="https://github.com/adilchobti/monte-carlo-portfolio-risk" target="_blank" rel="noopener">VIEW SOURCE CODE ↗</a></section>
+</main><footer class="footer container"><a class="brand footer-brand" href="index.html"><span class="brand-mark">AC</span><span>ADIL CHOBTI<span class="brand-sub">FINANCIAL ENGINEERING</span></span></a><p>© <span id="year"></span> ADIL CHOBTI. BUILT WITH CURIOSITY.</p><a href="#" class="back-top">BACK TO TOP ↑</a></footer></div><script src="script.js?v=6"></script></body></html>
