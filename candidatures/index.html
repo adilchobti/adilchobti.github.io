@@ -53,5 +53,15 @@
     <div class="dialog-actions"><button id="save-connect" class="dark">Enregistrer et connecter →</button><button id="cancel-settings" class="plain">Annuler</button></div>
     <small class="privacy">Lecture seule · Aucune ligne n’est stockée · Identifiants conservés sur cet appareil</small>
   </dialog>
+  <dialog id="gemini-dialog" class="gemini-dialog">
+    <form method="dialog" class="close-form"><button aria-label="Fermer">×</button></form>
+    <p class="eyebrow">ASSISTANT DE CANDIDATURE</p><h2>Préparer un brouillon avec Gemini</h2>
+    <p class="dialog-intro">Vérifie les informations, copie le prompt, puis colle-le dans Gemini. Tu pourras relire le texte généré et choisir « Modifier dans Gmail » pour l’enregistrer comme brouillon. Aucun message ne sera envoyé par ce site.</p>
+    <label for="gemini-prompt">Prompt préparé à partir de la ligne du Sheet</label>
+    <textarea id="gemini-prompt" class="prompt-preview" rows="12" readonly></textarea>
+    <p id="gemini-error" class="setup-error" role="alert" hidden></p>
+    <div class="dialog-actions"><button id="gemini-open" class="dark" type="button">Copier et ouvrir Gemini ↗</button><button id="gemini-copy" class="plain" type="button">Copier seulement</button><button id="gemini-cancel" class="plain" type="button">Fermer</button></div>
+    <small class="privacy">Gemini doit être connecté à Google Workspace pour transférer le brouillon vers Gmail.</small>
+  </dialog>
 </body>
 </html>
