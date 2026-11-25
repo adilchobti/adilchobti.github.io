@@ -10,8 +10,11 @@ Cette page statique est publiée à /candidatures/ sur GitHub Pages. Elle lit le
 - Relances : actions dont l’échéance se situe dans les 30 prochains jours, avec les retards en premier.
 - Offres : lignes de l’onglet Offres Détectées, triées par score.
 - Candidatures : lignes de l’onglet Candidature automatique.
+- Brouillons Gemini : depuis une piste, une offre ou une candidature, le bouton prépare un prompt factuel et le copie au presse-papiers avant d’ouvrir Gemini.
 
 Le site interroge les onglets Suivi Candidatures, Offres Détectées, Candidature automatique et Dashboard par une lecture groupée toutes les 60 secondes. Les indicateurs sont calculés dans le navigateur à partir du pipeline.
+
+La génération du brouillon se fait dans Gemini, sans API payante. L’utilisateur voit le prompt, choisit de le copier et de l’envoyer à Gemini, puis peut utiliser « Modifier dans Gmail » pour obtenir un brouillon Gmail. Le site ne dispose d’aucun accès d’écriture à Gmail et n’envoie aucun message.
 
 ## Première connexion
 
