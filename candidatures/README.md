@@ -5,16 +5,17 @@ Cette page statique est publiée à /candidatures/ sur GitHub Pages. Elle lit le
 ## Vues du site
 
 - Vue d’ensemble : volume de cibles, pipeline actif, taux de réponse et relances à échéance sous 7 jours.
+- Objectifs du jour : quatre tâches quotidiennes cochables, avec offres du jour et relances calculées depuis les données synchronisées. Les coches sont enregistrées dans le navigateur et repartent à zéro chaque jour.
 - Pistes positives : reprend le bloc Pistes positives du tableau Dashboard.
 - Pipeline : sociétés, pays, priorité, score, statut, prochaine relance et fiabilité.
 - Relances : actions dont l’échéance se situe dans les 30 prochains jours, avec les retards en premier.
 - Offres : lignes de l’onglet Offres Détectées, triées par score.
 - Candidatures : lignes de l’onglet Candidature automatique.
-- Brouillons Gemini : le bouton principal en haut copie une consigne quotidienne puis ouvre la conversation Gemini dédiée. Des boutons sur chaque piste, offre ou candidature préparent aussi un prompt individuel.
+- Gemini : le bouton principal en haut ouvre directement la conversation Gemini dédiée. Il n’y a plus de prompt à copier depuis le site.
 
-Le site interroge les onglets Suivi Candidatures, Offres Détectées, Candidature automatique et Dashboard par une lecture groupée toutes les 60 secondes. Les indicateurs sont calculés dans le navigateur à partir du pipeline.
+Le site interroge les onglets Suivi Candidatures, Offres Détectées, Candidature automatique et Dashboard par une lecture groupée toutes les 60 secondes. Il lit les colonnes complètes et repère les lignes d’en-tête dans chaque onglet, pour inclure les nouvelles lignes et tolérer le déplacement des tableaux. Pour Pistes positives, il cherche le titre dans Dashboard puis lit les lignes jusqu’à la fin du bloc. L’ordre des colonnes et les intitulés des tableaux doivent rester cohérents avec le format actuel.
 
-La génération du brouillon se fait dans la conversation Gemini dédiée, sans API ni envoi automatique par le site. Au clic sur le bouton principal, le navigateur ouvre la conversation, copie la consigne quotidienne, puis affiche cette consigne en secours. Il faut la coller dans Gemini. Gemini peut créer les brouillons Gmail uniquement si son accès Gmail est disponible et autorisé dans cette conversation ; aucun e-mail n’est envoyé par le site. La consigne demande de vérifier les contacts et doublons, de ne pas inventer d’informations et de ne pas modifier le Sheet.
+Le bouton Gemini ouvre simplement la conversation dédiée. Le site ne copie ni n’envoie de contenu vers Gemini et ne dispose d’aucun accès d’écriture à Gmail ou au Sheet.
 
 ## Première connexion
 
@@ -28,9 +29,9 @@ L’identifiant OAuth public et l’identifiant du tableur sont conservés dans 
 
 ## Plages lues
 
-- Suivi Candidatures : A4:U, avec les cibles, scores, statuts, réponses, dates de contact/relance, notes et fiabilité.
-- Offres Détectées : A1:J.
-- Candidature automatique : A4:G (Poste, Entreprise, Début, Durée, Note/10, Statut Soumission et Détails / Réf ATS).
-- Dashboard : A23:L28 pour les pistes positives.
+- Suivi Candidatures : colonnes A:U, avec les cibles, scores, statuts, réponses, dates de contact/relance, notes et fiabilité.
+- Offres Détectées : colonnes A:J.
+- Candidature automatique : colonnes A:G (Poste, Entreprise, Début, Durée, Note/10, Statut Soumission et Détails / Réf ATS).
+- Dashboard : colonnes A:L, avec détection du bloc Pistes positives.
 
 Le dépôt GitHub Pages est public. Ne place jamais de CV, de données de candidature, de jeton, de secret client ou de fichier de clé Google dans ce répertoire.
