@@ -10,11 +10,11 @@ Cette page statique est publiée à /candidatures/ sur GitHub Pages. Elle lit le
 - Relances : actions dont l’échéance se situe dans les 30 prochains jours, avec les retards en premier.
 - Offres : lignes de l’onglet Offres Détectées, triées par score.
 - Candidatures : lignes de l’onglet Candidature automatique.
-- Brouillons Gemini : depuis une piste, une offre ou une candidature, le bouton prépare un prompt factuel et le copie au presse-papiers avant d’ouvrir Gemini.
+- Brouillons Gemini : le bouton principal en haut copie une consigne quotidienne puis ouvre la conversation Gemini dédiée. Des boutons sur chaque piste, offre ou candidature préparent aussi un prompt individuel.
 
 Le site interroge les onglets Suivi Candidatures, Offres Détectées, Candidature automatique et Dashboard par une lecture groupée toutes les 60 secondes. Les indicateurs sont calculés dans le navigateur à partir du pipeline.
 
-La génération du brouillon se fait dans Gemini, sans API payante. L’utilisateur voit le prompt, choisit de le copier et de l’envoyer à Gemini, puis peut utiliser « Modifier dans Gmail » pour obtenir un brouillon Gmail. Le site ne dispose d’aucun accès d’écriture à Gmail et n’envoie aucun message.
+La génération du brouillon se fait dans la conversation Gemini dédiée, sans API ni envoi automatique par le site. Au clic sur le bouton principal, le navigateur ouvre la conversation, copie la consigne quotidienne, puis affiche cette consigne en secours. Il faut la coller dans Gemini. Gemini peut créer les brouillons Gmail uniquement si son accès Gmail est disponible et autorisé dans cette conversation ; aucun e-mail n’est envoyé par le site. La consigne demande de vérifier les contacts et doublons, de ne pas inventer d’informations et de ne pas modifier le Sheet.
 
 ## Première connexion
 
